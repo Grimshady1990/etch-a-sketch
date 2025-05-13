@@ -10,7 +10,9 @@ test.textContent = "Dom test"; */
 
 function gridCall() {
     const gridCell = document.createElement("div");
-    gridCell.textContent = "test";
+    
+    gridCell.setAttribute("style", "border: solid; border-width: 0.1px; background: green; width: 10px; height: 10px;");
+    
     container.appendChild(gridCell);
     
 
@@ -23,4 +25,4 @@ function createGrid(root) {
    
     }   
 }
-createGrid(3);
+createGrid(2);
