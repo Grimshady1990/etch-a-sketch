@@ -1,5 +1,8 @@
-const container = document.createElement("div");
-document.body.appendChild(container);
+
+
+
+
+
 
 
 
@@ -7,8 +10,12 @@ document.body.appendChild(container);
 const test = document.createElement("p");
 container.appendChild(test);
 test.textContent = "Dom test"; */
-
+const container = document.createElement("div");
+container.setAttribute("style", "display: flex; flex-wrap: wrap;");
+document.body.appendChild(container);
 function gridCall() {
+    
+    
     const gridCell = document.createElement("div");
     
     gridCell.setAttribute("style", "border: solid; border-width: 0.1px; background: green; width: 10px; height: 10px;");
@@ -25,4 +32,4 @@ function createGrid(root) {
    
     }   
 }
-createGrid(2);
+createGrid(16);
