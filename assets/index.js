@@ -1,4 +1,4 @@
-const bodyStyle = document.querySelector("body");
+/*const bodyStyle = document.querySelector("body");
 bodyStyle.setAttribute("style", "display: flex; flex-direction: column; align-items: center;");
 
 
@@ -28,5 +28,5 @@ createGrid16();
 function changeColor(event) {
     console.log(event);
     event.target.style.backgroundColor = "orange";
-}
+} */
 
