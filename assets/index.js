@@ -31,19 +31,18 @@ function changeColor(event) {
 } */
 /************************************************************ */
 
+// ADD prompt input to button
+document.querySelector("#grid-size").addEventListener("click", promptMe);
 
-// CREATE a function that accepts a number and returns the square value
-let squaredNumber = 0;
-
-function getRoot(root) {
-    squaredNumber += root ** 2;
-    return squaredNumber;
-
+function promptMe() {
+    let userInput = prompt("Please choose a size between 1-100")
+    alert(`You chose a grid of ${userInput} X ${userInput}`);
+    return userInput;
 }
-getRoot(2);
-console.log(squaredNumber);
 
-// CREATE a function that takes the square and creates that number of div elements
+
+
+console.log(promptMe());
 
 
 
