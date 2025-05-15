@@ -29,6 +29,21 @@ function changeColor(event) {
     console.log(event);
     event.target.style.backgroundColor = "orange";
 } */
+/************************************************************ */
+
+
+// CREATE a function that accepts a number and returns the square value
+let squaredNumber = 0;
+
+function getRoot(root) {
+    squaredNumber += root ** 2;
+    return squaredNumber;
+
+}
+getRoot(2);
+console.log(squaredNumber);
+
+// CREATE a function that takes the square and creates that number of div elements
 
 
 
