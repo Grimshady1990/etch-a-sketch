@@ -47,7 +47,7 @@ function gridBuilder() {
 
     let userSquared = userInput ** 2
     
-    for (let i = 2; i < userSquared; i++) {
+    for (let i = 0; i < userSquared; i++) {
         const containerId = document.querySelector("#container");
         const cellCreate = document.createElement("div");
         cellCreate.classList.add("cell");
