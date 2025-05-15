@@ -32,17 +32,32 @@ function changeColor(event) {
 /************************************************************ */
 
 // ADD prompt input to button
-document.querySelector("#grid-size").addEventListener("click", promptMe);
+document.querySelector("#grid-size").addEventListener("click", gridBuilder);
 
-function promptMe() {
+
+
+function gridBuilder() {
     let userInput = prompt("Please choose a size between 1-100")
-    alert(`You chose a grid of ${userInput} X ${userInput}`);
-    return userInput;
+    if (userInput < 1 || userInput > 100) {
+        alert("ERROR! Please choose a size between 1-100");
+        return gridBuilder();
+    } else {
+        alert(`You chose a grid of ${userInput} X ${userInput}`);    
+    }
+
+    let userSquared = userInput ** 2
+    
+    for (let i = 2; i < userSquared; i++) {
+        const containerId = document.querySelector("#container");
+        const cellCreate = document.createElement("div");
+        cellCreate.classList.add("cell");
+        containerId.appendChild(cellCreate);
+        console.log(cellCreate);
+        
+    }
+    
 }
 
-
-
-console.log(promptMe());
 
 
 

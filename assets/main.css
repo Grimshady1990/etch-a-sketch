@@ -14,7 +14,7 @@ body {
     background-color: blue;
 }
 
-#cell {
+.cell {
     width: 10px;
     height: 10px;
     background-color: orangered;
