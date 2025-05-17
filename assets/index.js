@@ -37,9 +37,9 @@ document.querySelector("#grid-size").addEventListener("click", gridBuilder);
 
 
 function gridBuilder() {
-    let userInput = prompt("Please choose a size between 1-100")
-    if (userInput < 1 || userInput > 100) {
-        alert("ERROR! Please choose a size between 1-100");
+    let userInput = prompt("Please choose a size between 1-99")
+    if (userInput < 1 || userInput > 99) {
+        alert("ERROR! Please choose a size between 1-99");
         return gridBuilder();
     } else {
         alert(`You chose a grid of ${userInput} X ${userInput}`);    
