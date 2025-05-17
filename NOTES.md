@@ -30,3 +30,7 @@ instead of finding the square number to fill the container I must use the root n
 // CREATE a for loop that takes the root number and creates the same number of sub containers
 
 // CREATE a for each loop that fills each sub container with the root number of cells.
+
+# Conclusion
+
+Fun little project I really enjoyed figuring out how to make the grids work at different sizes.
