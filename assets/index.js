@@ -49,7 +49,7 @@ function gridBuilder() {
         const containerId = document.querySelector("#container");
         const containerCreate = document.createElement("div");
         containerCreate.id = "containerId" + i;
-        containerCreate.classList.add("sub-container" + i);
+        containerCreate.classList.add("sub-container");
         containerId.appendChild(containerCreate);
         console.log(containerCreate);
         
@@ -57,10 +57,11 @@ function gridBuilder() {
 
     for (let i = 0; i < userInput; i++) {
         let cellId = document.querySelector("#containerId" + i);
+        for (let n = 0; n < userInput; n++){
         const cellCreate = document.createElement("div")
         cellCreate.classList.add("cell");
         cellId.appendChild(cellCreate);
-        
+        }
     }
     
 }
