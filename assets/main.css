@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    flex-direction: column;
     width: 160px;
     height: 160px;
     background-color: blue;
@@ -20,5 +21,16 @@ body {
 .cell {
 
     background-color: orangered;
+    display: flex;
     
+
+    height: 10px;
+    width: 10px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    max-width: auto;
 }

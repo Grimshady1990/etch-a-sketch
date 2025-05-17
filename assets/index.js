@@ -45,14 +45,21 @@ function gridBuilder() {
         alert(`You chose a grid of ${userInput} X ${userInput}`);    
     }
 
-    let userSquared = userInput ** 2
-    
-    for (let i = 0; i < userSquared; i++) {
+    for (let i = 0; i < userInput; i++) {
         const containerId = document.querySelector("#container");
-        const cellCreate = document.createElement("div");
+        const containerCreate = document.createElement("div");
+        containerCreate.id = "containerId" + i;
+        containerCreate.classList.add("sub-container" + i);
+        containerId.appendChild(containerCreate);
+        console.log(containerCreate);
+        
+    }
+
+    for (let i = 0; i < userInput; i++) {
+        let cellId = document.querySelector("#containerId" + i);
+        const cellCreate = document.createElement("div")
         cellCreate.classList.add("cell");
-        containerId.appendChild(cellCreate);
-        console.log(cellCreate);
+        cellId.appendChild(cellCreate);
         
     }
     
