@@ -36,8 +36,9 @@ document.querySelector("#grid-size").addEventListener("click", gridBuilder);
 
 
 
+
 function gridBuilder() {
-    let userInput = prompt("Please choose a size between 1-99")
+    let userInput = prompt("Please choose a size between 1-99");
     if (userInput < 1 || userInput > 99) {
         alert("ERROR! Please choose a size between 1-99");
         return gridBuilder();
@@ -58,14 +59,25 @@ function gridBuilder() {
     for (let i = 0; i < userInput; i++) {
         let cellId = document.querySelector("#containerId" + i);
         for (let n = 0; n < userInput; n++){
-        const cellCreate = document.createElement("div")
+        const cellCreate = document.createElement("div");
         cellCreate.classList.add("cell");
         cellId.appendChild(cellCreate);
+        cellCreate.addEventListener("mouseover", switchFunc);
         }
     }
     
+    
+
+    function switchFunc(event) {
+    console.log(event);
+    event.target.style.backgroundColor = "orange";
+    
+    
+
 }
 
 
 
 
+
+}

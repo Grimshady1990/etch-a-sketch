@@ -20,7 +20,7 @@ body {
 
 .cell {
 
-    background-color: orangered;
+    background-color: blue;
     display: flex;
     flex-direction: column;
     width: 100%;
